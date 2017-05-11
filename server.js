@@ -36,6 +36,12 @@ app.get('/about',(req,res)=>{
   });
 });
 
+app.get('/projects',(req,res)=>{
+  res.render('projects.pug',{
+    title:"Project Page"
+  })
+})
+
 app.get('/bad',(req,res)=>{
   res.send({
     errorMessage:"Error handling request",
