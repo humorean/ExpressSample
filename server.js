@@ -17,9 +17,9 @@ app.use((req,res,next)=>{
   next();
 })
 
-app.use((req,res,next)=>{
-  res.render('maintenance')
-})
+// app.use((req,res,next)=>{
+//   res.render('maintenance')
+// })
 
 app.set('view engine','pug');
 
